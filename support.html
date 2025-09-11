@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez ElectroPro pour toute question sur nos outils électriques. Support client disponible du lundi au vendredi. Formulaire de contact accessible.">
+    <title>Contact - ElectroPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip links pour la navigation au clavier -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+        <a href="#main-navigation" class="skip-link">Aller à la navigation</a>
+    </div>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navigation" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="ElectroPro - Retour à l'accueil">
+                <i class="bi bi-tools" aria-hidden="true"></i> ElectroPro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="index.html" role="menuitem">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown" role="none">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menuitem" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Nos Outils
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
+                            <li role="none"><a class="dropdown-item" href="categories/perceuses.html" role="menuitem"><i class="bi bi-drill" aria-hidden="true"></i> Perceuses</a></li>
+                            <li role="none"><a class="dropdown-item" href="categories/scies.html" role="menuitem"><i class="bi bi-tools" aria-hidden="true"></i> Scies</a></li>
+                            <li role="none"><a class="dropdown-item" href="categories/ponceuses.html" role="menuitem"><i class="bi bi-gear" aria-hidden="true"></i> Ponceuses</a></li>
+                            <li role="none"><a class="dropdown-item" href="categories/meuleuses.html" role="menuitem"><i class="bi bi-disc" aria-hidden="true"></i> Meuleuses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link active" href="support.html" role="menuitem" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu -->
+    <main id="main-content" class="container mt-4" role="main">
+        <!-- Fil d'ariane -->
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+
+        <!-- Titre -->
+        <header class="text-center mb-4">
+            <h1><i class="bi bi-envelope" aria-hidden="true"></i> Nous Contacter</h1>
+            <p>Une question ? Un problème ? Nous sommes là pour vous aider !</p>
+        </header>
+
+        <!-- Informations de contact -->
+        <section class="row mb-5" aria-labelledby="contact-info-title">
+            <h2 id="contact-info-title" class="visually-hidden">Informations de contact</h2>
+            <div class="col-md-4">
+                <article class="support-card">
+                    <i class="bi bi-telephone" style="font-size: 3rem; color: blue;" aria-hidden="true"></i>
+                    <h3 class="h4">Téléphone</h3>
+                    <p><strong><a href="tel:0123456789">01 23 45 67 89</a></strong></p>
+                    <p>Du lundi au vendredi<br>9h - 18h</p>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article class="support-card">
+                    <i class="bi bi-envelope" style="font-size: 3rem; color: green;" aria-hidden="true"></i>
+                    <h3 class="h4">Email</h3>
+                    <p><strong><a href="mailto:contact@electropro.fr">contact@electropro.fr</a></strong></p>
+                    <p>Réponse sous 24h<br>7 jours sur 7</p>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article class="support-card">
+                    <i class="bi bi-geo-alt" style="font-size: 3rem; color: red;" aria-hidden="true"></i>
+                    <h3 class="h4">Adresse</h3>
+                    <address>
+                        <p><strong>123 Rue des Outils<br>75001 Paris</strong></p>
+                        <p>Showroom ouvert<br>sur rendez-vous</p>
+                    </address>
+                </article>
+            </div>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section class="row" aria-labelledby="contact-form-title">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-form">
+                    <h2 id="contact-form-title" class="text-center mb-4">Formulaire de Contact</h2>
+                    
+                    <form role="form" aria-labelledby="contact-form-title">
+                        <fieldset class="row">
+                            <legend class="visually-hidden">Informations personnelles</legend>
+                            <div class="col-md-6 mb-3">
+                                <label for="nom" class="form-label">Votre nom *</label>
+                                <input type="text" class="form-control" id="nom" name="nom" required aria-describedby="nom-help">
+                                <div id="nom-help" class="form-text">Veuillez saisir votre nom complet</div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Votre email *</label>
+                                <input type="email" class="form-control" id="email" name="email" required aria-describedby="email-help">
+                                <div id="email-help" class="form-text">Nous vous répondrons à cette adresse</div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="row">
+                            <legend class="visually-hidden">Informations de contact et sujet</legend>
+                            <div class="col-md-6 mb-3">
+                                <label for="telephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" aria-describedby="tel-help">
+                                <div id="tel-help" class="form-text">Optionnel - pour un contact plus rapide</div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="sujet" class="form-label">Sujet *</label>
+                                <select class="form-control" id="sujet" name="sujet" required aria-describedby="sujet-help">
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="commande">Question sur une commande</option>
+                                    <option value="produit">Information sur un produit</option>
+                                    <option value="livraison">Problème de livraison</option>
+                                    <option value="retour">Retour ou échange</option>
+                                    <option value="autre">Autre question</option>
+                                </select>
+                                <div id="sujet-help" class="form-text">Sélectionnez le type de demande</div>
+                            </div>
+                        </fieldset>
+                        
+                        <div class="mb-3">
+                            <label for="commande" class="form-label">Numéro de commande (si applicable)</label>
+                            <input type="text" class="form-control" id="commande" name="commande" placeholder="Ex: CMD-2024-001" aria-describedby="commande-help">
+                            <div id="commande-help" class="form-text">Facultatif - pour les questions liées à une commande</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Votre message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Décrivez votre demande..." aria-describedby="message-help"></textarea>
+                            <div id="message-help" class="form-text">Décrivez votre demande en détail</div>
+                        </div>
+                        
+                        <fieldset class="mb-3">
+                            <legend class="visually-hidden">Options et consentements</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-check-input">
+                                <label for="newsletter" class="form-check-label">
+                                    Je souhaite recevoir les promotions par email
+                                </label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" id="conditions" name="conditions" class="form-check-input" required>
+                                <label for="conditions" class="form-check-label">
+                                    J'accepte que mes données soient utilisées pour répondre à ma demande *
+                                </label>
+                            </div>
+                        </fieldset>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg" aria-describedby="submit-help">
+                                <i class="bi bi-send" aria-hidden="true"></i> Envoyer le message
+                            </button>
+                            <div id="submit-help" class="form-text mt-2">Votre message sera traité dans les plus brefs délais</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aide rapide -->
+        <section class="row mt-5" aria-labelledby="help-title">
+            <h2 id="help-title" class="visually-hidden">Aide et informations pratiques</h2>
+            <div class="col-md-6">
+                <h3><i class="bi bi-question-circle" aria-hidden="true"></i> Questions Fréquentes</h3>
+                <ul>
+                    <li><strong>Comment suivre ma commande ?</strong><br>
+                        Vous recevez un email avec le numéro de suivi après expédition.</li>
+                    <li><strong>Puis-je retourner un produit ?</strong><br>
+                        Oui, vous avez 14 jours pour retourner un produit non utilisé.</li>
+                    <li><strong>Quels sont les moyens de paiement ?</strong><br>
+                        Carte bancaire, PayPal, virement bancaire et chèque.</li>
+                    <li><strong>Y a-t-il une garantie ?</strong><br>
+                        Tous nos outils sont garantis minimum 2 ans.</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-6">
+                <h3><i class="bi bi-clock" aria-hidden="true"></i> Nos Horaires</h3>
+                <table class="table" role="table" aria-label="Horaires d'ouverture">
+                    <thead>
+                        <tr>
+                            <th scope="col">Jour</th>
+                            <th scope="col">Horaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lundi - Vendredi</strong></td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Samedi</strong></td>
+                            <td>9h00 - 12h00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dimanche</strong></td>
+                            <td>Fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4><i class="bi bi-truck" aria-hidden="true"></i> Livraison</h4>
+                <ul>
+                    <li>Livraison standard : 3-5 jours (5€)</li>
+                    <li>Livraison express : 24-48h (10€)</li>
+                    <li>Livraison gratuite dès 150€</li>
+                    <li>Point relais disponible</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white py-4" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>ElectroPro</h5>
+                    <p>Votre boutique d'outillage électrique depuis 2020</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Liens utiles</h6>
+                    <ul class="list-unstyled" role="list">
+                        <li role="listitem"><a href="index.html" class="text-white">Accueil</a></li>
+                        <li role="listitem"><a href="categories/perceuses.html" class="text-white">Perceuses</a></li>
+                        <li role="listitem"><a href="support.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contact</h6>
+                    <address>
+                        <p>Email: <a href="mailto:contact@electropro.fr" class="text-white">contact@electropro.fr</a><br>Téléphone: <a href="tel:0123456789" class="text-white">01 23 45 67 89</a></p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-to-top" id="scrollToTop" title="Retour en haut" aria-label="Retour en haut de la page">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script pour le bouton retour en haut -->
+    <script>
+        // Bouton retour en haut
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        // Afficher/masquer le bouton selon la position de scroll
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        // Retour en haut au clic
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
