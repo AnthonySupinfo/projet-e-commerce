@@ -3,14 +3,14 @@ body {
 }
 
 /* Skip links pour l'accessibilité */
-.skip-links {
+.nav-claviers {
   position: absolute;
   top: -40px;
   left: 6px;
   z-index: 1000;
 }
 
-.skip-link {
+.nav-clavier {
   position: absolute;
   top: -40px;
   left: 6px;
@@ -23,7 +23,7 @@ body {
   transition: top 0.3s;
 }
 
-.skip-link:focus {
+.nav-clavier:focus {
   top: 6px;
   color: #fff;
   text-decoration: none;
@@ -574,7 +574,7 @@ legend:focus {
 
 /* Section d'accueil */
 .jumbotron {
-  background-image: url("../images/produits/efond-h1.jpg");
+  background: linear-gradient(rgba(11, 81, 150, 0.4), rgba(242, 239, 239, 0.6)), url("../images/produits/efond-h1.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border: 2px solid #dee2e6;
@@ -585,13 +585,13 @@ legend:focus {
 
 /* Amélioration de la section d'accueil pour l'accessibilité */
 .jumbotron h1 {
-  color: #212529;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .jumbotron p {
-  color: #495057;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Amélioration de la section d'accueil pour la navigation au clavier */
@@ -820,12 +820,12 @@ footer address a:focus {
   }
 
   /* Amélioration du responsive pour l'accessibilité */
-  .skip-links {
+  .nav-claviers {
     position: static;
     margin-bottom: 1rem;
   }
 
-  .skip-link {
+  .nav-clavier {
     position: static;
     display: inline-block;
     margin: 0.25rem;
@@ -1346,7 +1346,7 @@ footer address a:focus {
 }
 
 /* Amélioration des utilitaires pour la navigation au clavier */
-.skip-link {
+.nav-clavier {
   position: absolute;
   top: -40px;
   left: 6px;
@@ -1360,7 +1360,7 @@ footer address a:focus {
   z-index: 1000;
 }
 
-.skip-link:focus {
+.nav-clavier:focus {
   top: 6px;
   color: #fff;
   text-decoration: none;
@@ -1431,4 +1431,12 @@ footer address a:focus {
 .scroll-to-top[aria-label]:focus {
   border-color: #ffffff;
   box-shadow: 0 0 0 2px #0066cc;
+}
+
+.delivery-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
