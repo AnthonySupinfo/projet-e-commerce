@@ -11,16 +11,17 @@
 </head>
 <body>
     <!-- Skip links pour la navigation au clavier -->
-    <div class="skip-links">
-        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-        <a href="#main-navigation" class="skip-link">Aller à la navigation</a>
+    <div class="nav-claviers">
+        <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
+        <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
     </div>
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navigation" role="navigation" aria-label="Navigation principale">
         <div class="container">
-            <a class="navbar-brand" href="../index.html" aria-label="ElectroPro - Retour à l'accueil">
-                <i class="bi bi-tools" aria-hidden="true"></i> ElectroPro
-            </a>
+        <div class="navbar-brand align-items-center">
+          <i class="bi bi-tools" aria-hidden="true"></i>
+          <span class="mt-2">ElectroPro</span>
+        </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
@@ -33,12 +34,76 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menuitem" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
                             Nos Outils
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
-                            <li role="none"><a class="dropdown-item" href="../categories/perceuses.html" role="menuitem"><i class="bi bi-drill" aria-hidden="true"></i> Perceuses</a></li>
-                            <li role="none"><a class="dropdown-item" href="../categories/scies.html" role="menuitem"><i class="bi bi-tools" aria-hidden="true"></i> Scies</a></li>
-                            <li role="none"><a class="dropdown-item" href="../categories/ponceuses.html" role="menuitem"><i class="bi bi-gear" aria-hidden="true"></i> Ponceuses</a></li>
-                            <li role="none"><a class="dropdown-item" href="../categories/meuleuses.html" role="menuitem"><i class="bi bi-disc" aria-hidden="true"></i> Meuleuses</a></li>
-                        </ul>
+                         <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                role="menu"
+              >
+                <li role="none">
+                  <a
+                    class="dropdown-item"
+                    href="../categories/perceuses.html"
+                    role="menuitem"
+                  >
+                    <img
+                      src="../images/categories/perceuse-a-main.png"
+                      alt="Icône perceuse"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    />
+                    Perceuses
+                  </a>
+                </li>
+                <li role="none">
+                  <a
+                    class="dropdown-item"
+                    href="../categories/scies.html"
+                    role="menuitem"
+                  >
+                    <img
+                      src="../images/categories/scie-circulaire.png"
+                      alt="Icône scie"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    />
+                    Scies
+                  </a>
+                </li>
+                <li role="none">
+                  <a
+                    class="dropdown-item"
+                    href="../categories/ponceuses.html"
+                    role="menuitem"
+                  >
+                    <img
+                      src="../images/categories/ponceuse.png"
+                      alt="Icône ponceuse"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    />
+                    Ponceuses
+                  </a>
+                </li>
+                <li role="none">
+                  <a
+                    class="dropdown-item"
+                    href="../categories/meuleuses.html"
+                    role="menuitem"
+                  >
+                    <img
+                      src="../images/categories/meuleuse-dangle.png"
+                      alt="Icône meuleuse"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    />
+                    Meuleuses
+                  </a>
+                </li>
+              </ul>
                     </li>
                     <li class="nav-item" role="none">
                         <a class="nav-link" href="../support.html" role="menuitem">Contact</a>
@@ -50,14 +115,6 @@
 
     <!-- Contenu principal -->
     <main id="main-content" class="container mt-4" role="main">
-        <!-- Fil d'ariane -->
-        <nav class="breadcrumb" aria-label="Fil d'Ariane">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
-                <li class="breadcrumb-item"><a href="../categories/meuleuses.html">Meuleuse</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Meuleuse 230mm</li>
-            </ol>
-        </nav>
 
         <!-- Produit -->
         <article class="row">
@@ -170,9 +227,7 @@
                     <fieldset class="quantity-controls">
                         <legend class="visually-hidden">Sélection de la quantité</legend>
                         <label for="quantity">Quantité : </label>
-                        <button type="button" aria-label="Diminuer la quantité" id="decrease-qty">-</button>
                         <input type="number" id="quantity" value="1" min="1" max="5" aria-label="Quantité à commander">
-                        <button type="button" aria-label="Augmenter la quantité" id="increase-qty">+</button>
                     </fieldset>
 
                     <fieldset class="mt-3">

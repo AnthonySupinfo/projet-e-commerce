@@ -23,13 +23,10 @@
       aria-label="Navigation principale"
     >
       <div class="container">
-        <a
-          class="navbar-brand"
-          href="../index.html"
-          aria-label="ElectroPro - Retour à l'accueil"
-        >
-          <i class="bi bi-tools" aria-hidden="true"></i> ElectroPro
-        </a>
+        <div class="navbar-brand align-items-center">
+          <i class="bi bi-tools" aria-hidden="true"></i>
+          <span class="mt-2">ElectroPro</span>
+        </div>
 
         <button
           class="navbar-toggler"
@@ -47,7 +44,7 @@
           <ul class="navbar-nav ms-auto" role="menubar">
             <li class="nav-item" role="none">
               <a
-                class="nav-link active"
+                class="nav-link"
                 href="../index.html"
                 role="menuitem"
                 aria-current="page"
@@ -88,11 +85,7 @@
                   </a>
                 </li>
                 <li role="none">
-                  <a
-                    class="dropdown-item"
-                    href="scies.html"
-                    role="menuitem"
-                  >
+                  <a class="dropdown-item" href="scies.html" role="menuitem">
                     <img
                       src="../images/categories/scie-circulaire.png"
                       alt="Icône scie"
@@ -149,10 +142,6 @@
 
     <!-- Contenu -->
     <div class="container mt-4">
-      <!-- Fil d'ariane -->
-      <nav class="breadcrumb">
-        <a href="../index.html">Accueil</a> > <span>Scies</span>
-      </nav>
 
       <!-- Titre -->
       <div class="text-center mb-4">
@@ -168,10 +157,13 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body text-center">
-              <i class="bi bi-lightning" style="font-size: 4rem; color: #666"></i>
-              <h5 class="card-title">Scie circulaire de table </h5>
+              <i
+                class="bi bi-lightning"
+                style="font-size: 4rem; color: #666"
+              ></i>
+              <h5 class="card-title">Scie circulaire de table</h5>
               <p class="card-text">
-                GTS 254 Bosch Professional 230V <br>1800Watts 
+                GTS 254 Bosch Professional 230V <br />1800Watts
               </p>
               <p><strong>Caractéristiques :</strong></p>
               <ul class="list-unstyled text-start">
@@ -198,7 +190,8 @@
               ></i>
               <h5 class="card-title">Scie Circulaire 12V</h5>
               <p class="card-text">
-                GKS 12V-26 Bosch Professional 12V System scie circulaire sans-fil
+                GKS 12V-26 Bosch Professional 12V System scie circulaire
+                sans-fil
               </p>
               <p><strong>Caractéristiques :</strong></p>
               <ul class="list-unstyled text-start">
@@ -226,17 +219,29 @@
             <h5>ElectroPro</h5>
             <p>Votre boutique d'outillage électrique</p>
           </div>
-        <div class="col-md-3">
-                    <h6>Nos produits</h6>
-                    <ul class="list-unstyled" role="list">
-                        
-                        <li><a href="../categories/perceuses.html" class="text-white">Perceuses</a></li>
-                        <li><a href="../categories/scies.html" class="text-white">Scies</a></li>
-                    <li><a href="../categories/scies.html" class="text-white">Ponceuses</a></li>
-                    <li><a href="../categories/scies.html" class="text-white">Meuleuses</a></li>
-                    
-                    </ul>
-                </div>
+          <div class="col-md-3">
+            <h6>Nos produits</h6>
+            <ul class="list-unstyled" role="list">
+              <li>
+                <a href="../categories/perceuses.html" class="text-white"
+                  >Perceuses</a
+                >
+              </li>
+              <li>
+                <a href="../categories/scies.html" class="text-white">Scies</a>
+              </li>
+              <li>
+                <a href="../categories/scies.html" class="text-white"
+                  >Ponceuses</a
+                >
+              </li>
+              <li>
+                <a href="../categories/scies.html" class="text-white"
+                  >Meuleuses</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="col-md-3">
             <h6>Contact</h6>
             <p>Email: contact@electropro.fr<br />Tel: 01 23 45 67 89</p>
