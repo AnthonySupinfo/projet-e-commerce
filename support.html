@@ -28,7 +28,6 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary"
       id="main-navigation"
-      role="navigation"
       aria-label="Navigation principale"
     >
       <div class="container">
@@ -47,33 +46,24 @@
           <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" role="menubar">
-            <li class="nav-item" role="none">
-              <a class="nav-link" href="index.html" role="menuitem">Accueil</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
             </li>
-            <li class="nav-item dropdown" role="none">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
-                role="menuitem"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
                 Nos Outils
               </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                role="menu"
-              >
-                <li role="none">
-                  <a
-                    class="dropdown-item"
-                    href="/categories/perceuses.html"
-                    role="menuitem"
-                  >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/categories/perceuses.html">
                     <img
                       src="../images/categories/perceuse-a-main.png"
                       alt="Icône perceuse"
@@ -84,12 +74,8 @@
                     Perceuses
                   </a>
                 </li>
-                <li role="none">
-                  <a
-                    class="dropdown-item"
-                    href="/categories/scies.html"
-                    role="menuitem"
-                  >
+                <li>
+                  <a class="dropdown-item" href="/categories/scies.html">
                     <img
                       src="../images/categories/scie-circulaire.png"
                       alt="Icône scie"
@@ -100,12 +86,8 @@
                     Scies
                   </a>
                 </li>
-                <li role="none">
-                  <a
-                    class="dropdown-item"
-                    href="/categories/ponceuses.html"
-                    role="menuitem"
-                  >
+                <li>
+                  <a class="dropdown-item" href="/categories/ponceuses.html">
                     <img
                       src="../images/categories/ponceuse.png"
                       alt="Icône ponceuse"
@@ -116,12 +98,8 @@
                     Ponceuses
                   </a>
                 </li>
-                <li role="none">
-                  <a
-                    class="dropdown-item"
-                    href="/categories/meuleuses.html"
-                    role="menuitem"
-                  >
+                <li>
+                  <a class="dropdown-item" href="/categories/meuleuses.html">
                     <img
                       src="../images/categories/meuleuse-dangle.png"
                       alt="Icône meuleuse"
@@ -134,12 +112,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item" role="none">
-              <a
-                class="nav-link"
-                href="support.html"
-                role="menuitem"
-                aria-current="page"
+            <li class="nav-item">
+              <a class="nav-link" href="support.html" aria-current="page"
                 >Contact</a
               >
             </li>
@@ -149,13 +123,12 @@
     </nav>
 
     <!-- Contenu -->
-    <main id="main-content" class="container mt-4" role="main">
+    <main id="main-content" class="container mt-4">
       <!-- Titre -->
       <header class="text-center mb-4">
         <h1>
           <i class="bi bi-envelope" aria-hidden="true"></i> Nous Contacter
         </h1>
-        <p>Une question ? Un problème ? Nous sommes là pour vous aider !</p>
       </header>
 
       <!-- Informations de contact -->
@@ -172,9 +145,8 @@
             ></i>
             <h3 class="h4">Téléphone</h3>
             <p>
-              <strong><a href="tel:0123456789">01 23 45 67 89</a></strong>
+              <strong> <a href="tel:0123456789">01 23 45 67 89</a></strong>
             </p>
-            <p>Du lundi au vendredi<br />9h - 18h</p>
           </article>
         </div>
 
@@ -187,13 +159,12 @@
             ></i>
             <h3 class="h4">Email</h3>
             <p>
-              <strong
-                ><a href="mailto:contact@electropro.fr"
+              <strong>
+                <a href="mailto:contact@electropro.fr"
                   >contact@electropro.fr</a
                 ></strong
               >
             </p>
-            <p>Réponse sous 24h<br />7 jours sur 7</p>
           </article>
         </div>
 
@@ -209,7 +180,6 @@
               <p>
                 <strong>123 Rue des Outils<br />75001 Paris</strong>
               </p>
-              <p>Showroom ouvert<br />sur rendez-vous</p>
             </address>
           </article>
         </div>
@@ -223,7 +193,7 @@
               Formulaire de Contact
             </h2>
 
-            <form role="form" aria-labelledby="contact-form-title">
+            <form aria-labelledby="contact-form-title">
               <fieldset class="row">
                 <legend class="visually-hidden">
                   Informations personnelles
@@ -238,9 +208,6 @@
                     required
                     aria-describedby="nom-help"
                   />
-                  <div id="nom-help" class="form-text">
-                    Veuillez saisir votre nom
-                  </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
@@ -253,9 +220,6 @@
                     required
                     aria-describedby="prenom-help"
                   />
-                  <div id="prenom-help" class="form-text">
-                    Veuillez saisir votre prénom
-                  </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
@@ -268,9 +232,6 @@
                     required
                     aria-describedby="email-help"
                   />
-                  <div id="email-help" class="form-text">
-                    Nous vous répondrons à cette adresse
-                  </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
@@ -282,9 +243,6 @@
                     name="telephone"
                     aria-describedby="tel-help"
                   />
-                  <div id="tel-help" class="form-text">
-                    Optionnel - pour un contact plus rapide
-                  </div>
                 </div>
               </fieldset>
 
@@ -297,11 +255,8 @@
                   rows="5"
                   required
                   placeholder="Décrivez votre demande..."
-                  aria-describedby="message-help"
-                ></textarea>
-                <div id="message-help" class="form-text">
-                  Décrivez votre demande en détail
-                </div>
+                >
+                </textarea>
               </div>
 
               <fieldset class="mb-3">
@@ -333,52 +288,49 @@
                   <i class="bi bi-send" aria-hidden="true"></i> Envoyer le
                   message
                 </button>
-                <div id="submit-help" class="form-text mt-2">
-                  Votre message sera traité dans les plus brefs délais
-                </div>
               </div>
             </form>
           </div>
         </div>
       </section>
 
-      <!-- Aide rapide -->
+      <!-- Nos Horaires -->
       <section class="row mt-5" aria-labelledby="help-title">
         <h2 id="help-title" class="visually-hidden">
           Aide et informations pratiques
         </h2>
         <div class="delivery-support">
-            <div class="col-md-4">
+          <div class="col-md-4">
             <h3><i class="bi bi-clock" aria-hidden="true"></i> Nos Horaires</h3>
-            <table class="table" role="table" aria-label="Horaires d'ouverture">
-                <thead>
+            <table class="table" aria-label="Horaires d'ouverture">
+              <thead>
                 <tr>
-                    <th scope="col">Jour</th>
-                    <th class="text-right" scope="col">Horaires</th>
+                  <th scope="col">Jour</th>
+                  <th class="text-right" scope="col">Horaires</th>
                 </tr>
-                </thead>
-                <tbody>
+              </thead>
+              <tbody>
                 <tr>
-                    <td><strong>Lundi - Vendredi</strong></td>
-                    <td class="text-right">9h00 - 18h00</td>
-                </tr>
-                <tr>
-                    <td><strong>Samedi</strong></td>
-                    <td class="text-right">9h00 - 12h00</td>
+                  <td><strong>Lundi - Vendredi</strong></td>
+                  <td class="text-right">9h00 - 18h00</td>
                 </tr>
                 <tr>
-                    <td><strong>Dimanche</strong></td>
-                    <td class="text-right">Fermé</td>
+                  <td><strong>Samedi</strong></td>
+                  <td class="text-right">9h00 - 12h00</td>
                 </tr>
-                </tbody>
+                <tr>
+                  <td><strong>Dimanche</strong></td>
+                  <td class="text-right">Fermé</td>
+                </tr>
+              </tbody>
             </table>
-            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Pied de page -->
-    <footer class="bg-dark text-white py-4" role="contentinfo">
+    <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -387,29 +339,17 @@
           </div>
           <div class="col-md-3">
             <h6>Liens utiles</h6>
-            <ul class="list-unstyled" role="list">
-              <li role="listitem">
+            <ul class="list-unstyled">
+              <li>
                 <a href="index.html" class="text-white">Accueil</a>
-              </li>
-              <li role="listitem">
-                <a href="categories/perceuses.html" class="text-white"
-                  >Perceuses</a
-                >
-              </li>
-              <li role="listitem">
-                <a href="support.html" class="text-white">Contact</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3">
             <h6>Contact</h6>
             <address>
-              <p>
-                Email:
-                <a href="mailto:contact@electropro.fr" class="text-white"
-                  >contact@electropro.fr</a
-                ><br />Téléphone:
-                <a href="tel:0123456789" class="text-white">01 23 45 67 89</a>
+               <p>Email&nbsp;:&nbsp;<a>contact@electropro.fr</a>
+                <br/>Téléphone&nbsp;:&nbsp;<a>01 23 45 67 89</a>
               </p>
             </address>
           </div>

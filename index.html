@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ElectroPro - Votre boutique d'outillage électrique en ligne. Perceuses, scies, ponceuses et meuleuses de qualité professionnelle."
-    />
+    <meta name="description" content="ElectroPro - Votre boutique d'outillage électrique en ligne. Perceuses, scies, ponceuses et meuleuses de qualité professionnelle."/>
     <title>ElectroPro - Outillage Électrique Professionnel</title>
 
     <!-- Bootstrap CSS -->
@@ -23,137 +21,94 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-
-  
   <body>
-    <!-- Skip links pour la navigation au clavier -->
-    <div class="nav-claviers">
-      <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
-      <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
-    </div>
     <!-- Menu de navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary"
-      id="main-navigation"
-      role="navigation"
-      aria-label="Navigation principale"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"
+         id="main-navigation"
+         aria-label="Navigation principale">
       <div class="container">
         <div class="navbar-brand align-items-center">
           <i class="bi bi-tools" aria-hidden="true"></i>
           <span class="mt-2">ElectroPro</span>
         </div>
-
+         <!-- Dérouler-->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Basculer la navigation"
-        >
+          aria-expanded="false">
           <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" role="menubar">
-            <li class="nav-item" role="none">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
               <a
                 class="nav-link"
                 href="index.html"
-                role="menuitem"
-                aria-current="page"
-                >Accueil</a
-              >
+                aria-current="page">Accueil</a>
             </li>
-            <li class="nav-item dropdown" role="none">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
-                role="menuitem"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                aria-haspopup="true"
-              >
-                Nos Outils
-              </a>
+                aria-haspopup="true">Nos Outils</a>
               <ul
                 class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                role="menu"
-              >
-                <li role="none">
-                  <a
+                aria-labelledby="navbarDropdown">
+                <li>
+                  <a 
                     class="dropdown-item"
-                    href="categories/perceuses.html"
-                    role="menuitem"
-                  >
+                    href="categories/perceuses.html">
                     <img
                       src="./images/categories/perceuse-a-main.png"
                       alt="Icône perceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
-                    />
-                    Perceuses
-                  </a>
+                      aria-hidden="true"/>Perceuses</a>
                 </li>
-                <li role="none">
+                <li>
                   <a
                     class="dropdown-item"
-                    href="categories/scies.html"
-                    role="menuitem"
-                  >
+                    href="categories/scies.html">
                     <img
                       src="./images/categories/scie-circulaire.png"
                       alt="Icône scie"
                       width="16"
                       height="16"
-                      aria-hidden="true"
-                    />
-                    Scies
-                  </a>
+                      aria-hidden="true"/>Scies</a>
                 </li>
-                <li role="none">
+                <li>
                   <a
                     class="dropdown-item"
-                    href="categories/ponceuses.html"
-                    role="menuitem"
-                  >
+                    href="categories/ponceuses.html">
                     <img
                       src="./images/categories/ponceuse.png"
                       alt="Icône ponceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
-                    />
-                    Ponceuses
-                  </a>
+                      aria-hidden="true"/>Ponceuses</a>
                 </li>
-                <li role="none">
+                <li>
                   <a
                     class="dropdown-item"
-                    href="categories/meuleuses.html"
-                    role="menuitem"
-                  >
+                    href="categories/meuleuses.html">
                     <img
                       src="./images/categories/meuleuse-dangle.png"
                       alt="Icône meuleuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
-                    />
-                    Meuleuses
-                  </a>
+                      aria-hidden="true"/>Meuleuses</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item" role="none">
-              <a class="nav-link" href="support.html" role="menuitem"
-                >Contact</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -161,7 +116,7 @@
     </nav>
 
     <!-- Contenu principal -->
-    <main id="main-content" role="main">
+    <main id="main-content">
       <!-- Section de bienvenue -->
       <section class="container mt-4" aria-labelledby="welcome-title">
         <div class="jumbotron bg-light p-5 rounded">
@@ -174,102 +129,88 @@
           <p>
             <strong
               >Nous vendons des outils électriques pour tous vos travaux.
-              Perceuses, scies, ponceuses et meuleuses disponibles.</strong
-            >
+              Perceuses, scies, ponceuses et meuleuses disponibles.</strong>
           </p>
           <a
             class="btn btn-primary btn-lg"
             href="#produits"
             aria-describedby="welcome-description"
-            >Voir nos produits</a
-          >
+            >Voir nos produits</a>
         </div>
       </section>
 
       <!-- Nos catégories -->
       <section class="container mt-5" aria-labelledby="categories-title">
         <h2 id="categories-title" class="text-center mb-4">Nos Catégories</h2>
-        <div class="row" role="list">
-          <div class="col-md-3 mb-4" role="listitem">
+        <div class="row">
+          <div class="col-md-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <img
                   src="./images/categories/perceuse-a-main.png"
                   alt="Icône représentant une perceuse à main"
                   width="48"
-                  height="48"
-                />
+                  height="48"/>
                 <h3 class="card-title mt-3 h5">Perceuses</h3>
                 <p class="card-text">Perceuses 18V & 12V</p>
                 <a
                   href="categories/perceuses.html"
                   class="btn btn-primary"
-                  aria-label="Voir la catégorie Perceuses"
-                  >Voir</a
-                >
+                  aria-label="Voir la catégorie Perceuses">Voir</a>
               </div>
             </article>
           </div>
 
-          <div class="col-md-3 mb-4" role="listitem">
+          <div class="col-md-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <img
                   src="./images/categories/scie-circulaire.png"
                   alt="Icône représentant une scie circulaire"
                   width="48"
-                  height="48"
-                />
+                  height="48"/>
                 <h3 class="card-title mt-3 h5">Scies</h3>
                 <p class="card-text">Scies circulaires</p>
                 <a
                   href="categories/scies.html"
                   class="btn btn-primary"
-                  aria-label="Voir la catégorie Scies"
-                  >Voir</a
-                >
+                  aria-label="Voir la catégorie Scies">Voir</a>
               </div>
             </article>
           </div>
 
-          <div class="col-md-3 mb-4" role="listitem">
+          <div class="col-md-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <img
                   src="./images/categories/ponceuse.png"
                   alt="Icône représentant une ponceuse"
                   width="48"
-                  height="48"
-                />
+                  height="48"/>
                 <h3 class="card-title mt-3 h5">Ponceuses</h3>
-                <p class="card-text">Ponceuses <br>18V & 12V</p>
+                <p class="card-text">Ponceuses 18V & 12V</p>
                 <a
                   href="categories/ponceuses.html"
                   class="btn btn-primary"
-                  aria-label="Voir la catégorie Ponceuses"
-                  >Voir</a
-                >
+                  aria-label="Voir la catégorie Ponceuses">Voir</a>
               </div>
             </article>
           </div>
 
-          <div class="col-md-3 mb-4" role="listitem">
+          <div class="col-md-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <img
                   src="./images/categories/meuleuse-dangle.png"
                   alt="Icône représentant une meuleuse d'angle"
                   width="48"
-                  height="48"
-                />
+                  height="48"/>
                 <h3 class="card-title mt-3 h5">Meuleuses</h3>
                 <p class="card-text">Meuleuses 125 & 230mm</p>
                 <a
                   href="categories/meuleuses.html"
                   class="btn btn-primary"
-                  aria-label="Voir la catégorie Meuleuses"
-                  >Voir</a
-                >
+                  aria-label="Voir la catégorie Meuleuses">Voir</a>
               </div>
             </article>
           </div>
@@ -280,90 +221,70 @@
       <section
         class="container mt-5"
         id="produits"
-        aria-labelledby="products-title"
-      >
-        <h2 id="products-title" class="text-center mb-4">
-          Nos Produits Populaires
-        </h2>
-        <div class="row justify-content-center" role="list">
-          <div class="col-md-6 col-lg-3 mb-4" role="listitem">
+        aria-labelledby="products-title">
+        <h2 id="products-title" class="text-center mb-4">Nos Produits Populaires</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <i
-                  class="bi bi-tools"
+                  class="bi bi-screwdriver"
                   style="font-size: 4rem; color: #666"
-                  aria-hidden="true"
-                ></i>
-                <h3 class="card-title h5">Perceuse Pro</h3>
-                <p class="card-text">Perceuse 18V avec batterie</p>
-                <div class="text-danger h4" aria-label="Prix : 189 euros">
-                  129€
+                  aria-hidden="true"></i>
+                <h3 class="card-title h5">Perceuse à Percussion</h3>
+                <p class="card-text">Perceuse 18V</p>
+                <div class="text-danger h4">189€
                 </div>
                 <a
                   href="produits/perceuse-pro.html"
-                  class="btn btn-success"
-                  aria-label="Acheter la Perceuse Pro à 189 euros"
-                  >Acheter</a
-                >
+                  class="btn btn-success">Acheter</a>
               </div>
             </article>
           </div>
 
-          <div class="col-md-6 col-lg-3 mb-4" role="listitem">
+          <div class="col-md-6 col-lg-3 mb-4">
             <article class="card h-100">
               <div class="card-body text-center">
                 <i
                   class="bi bi-gear"
                   style="font-size: 4rem; color: #666"
-                  aria-hidden="true"
-                ></i>
-                <h3 class="card-title h5">Ponceuse</h3>
-                <p class="card-text">Ponceuse excentrique 300W</p>
-                <div class="text-danger h4" aria-label="Prix : 89 euros">
-                  89€
+                  aria-hidden="true"></i>
+                <h3 class="card-title h5">Ponceuse Excentrique</h3>
+                <p class="card-text">Ponceuse 12V</p>
+                <div class="text-danger h4">174€
                 </div>
-                <a
-                  href="produits/ponceuse.html"
-                  class="btn btn-success"
-                  aria-label="Acheter la Ponceuse à 89 euros"
-                  >Acheter</a>
+                <a href="produits/ponceuse12v.html"
+                  class="btn btn-success">Acheter</a>
               </div>
             </article>
-          </div>
-      
-          
-            </article>
-          </div>
+          </div> 
         </div>
       </section>
 
-      <!-- Pourquoi nous choisir -->
+      <!-- INFO -->
       <section class="container mt-5 mb-5" aria-labelledby="why-choose-title">
-        <div class="row" role="list">
-          <div class="col-md-4 text-center mb-4" role="listitem">
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-truck"
               style="font-size: 3rem; color: blue"
-              aria-hidden="true"
-            ></i>
+              aria-hidden="true"></i>
             <h3 class="mt-3 h4">Livraison Rapide</h3>
             <p>Livraison en 24-48h partout en France</p>
           </div>
-          <div class="col-md-4 text-center mb-4" role="listitem">
+          <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-shield-check"
               style="font-size: 3rem; color: green"
-              aria-hidden="true"
-            ></i>
+              aria-hidden="true"></i>
             <h3 class="mt-3 h4">Garantie</h3>
             <p>Tous nos outils sont garantis 2 ans minimum</p>
           </div>
-          <div class="col-md-4 text-center mb-4" role="listitem">
+          <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-telephone"
               style="font-size: 3rem; color: red"
-              aria-hidden="true"
-            ></i>
+              aria-hidden="true"></i>
             <h3 class="mt-3 h4">Support</h3>
             <p>Une équipe à votre écoute du lundi au vendredi</p>
           </div>
@@ -371,57 +292,46 @@
       </section>
     </main>
 
-    <!-- Pied de page -->
-    <footer class="bg-dark text-white py-4" role="contentinfo">
+    <!-- ElectroPro -->
+    <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h5>ElectroPro</h5>
             <p>Votre boutique d'outillage électrique en ligne depuis 2020</p>
           </div>
+          <!-- Liens utiles -->
           <div class="col-md-3">
             <h6>Liens utiles</h6>
-            <ul class="list-unstyled" role="list">
+            <ul class="list-unstyled">
               <li><a href="index.html" class="text-white">Accueil</a></li>
               <li><a href="../categories/perceuses.html" class="text-white">Perceuses</a></li>
               <li><a href="../categories/scies.html" class="text-white">Scies</a></li>
               <li><a href="../categories/ponceuses.html" class="text-white">Ponceuses</a></li>
               <li><a href="../categories/meuleuses.html" class="text-white">Meuleuses</a></li>
-      
-                <a href="support.html" class="text-white">Contact</a>
+              <li><a href="support.html" class="text-white">Contact</a></li>
               </li>
             </ul>
           </div>
+          <!-- Contact -->
           <div class="col-md-3">
             <h6>Contact</h6>
-            <address>
-              <p>
-                Email:
-                <a href="mailto:contact@electropro.fr" class="text-white"
-                  >contact@electropro.fr</a
-                ><br />
-                Téléphone:
-                <a href="tel:0123456789" class="text-white">01 23 45 67 89</a>
+              <p>Email&nbsp;:&nbsp;<a>contact@electropro.fr</a>
+                <br/>Téléphone&nbsp;:&nbsp;<a>01 23 45 67 89</a>
               </p>
-            </address>
           </div>
         </div>
         <hr />
+        <!-- Tous droits réservés -->
         <div class="text-center">
           <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
         </div>
       </div>
-    </footer>
-
-    <!-- Bouton retour en haut -->
-    <button
-      class="scroll-to-top"
-      id="scrollToTop"
-      title="Retour en haut"
-      aria-label="Retour en haut de la page"
-    >
+      <!-- Bouton retour en haut -->
+       <button class="scroll-to-top" id="scrollToTop" title="Retour en haut" aria-label="Retour en haut de la page">
       <i class="bi bi-arrow-up" aria-hidden="true"></i>
     </button>
+    </footer>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -435,18 +345,12 @@
       window.addEventListener("scroll", function () {
         if (window.pageYOffset > 300) {
           scrollToTopBtn.classList.add("show");
-        } else {
-          scrollToTopBtn.classList.remove("show");
-        }
-      });
+        }});
 
       // Retour en haut au clic
       scrollToTopBtn.addEventListener("click", function () {
         window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
+          top: 0,});});
     </script>
   </body>
 </html>
