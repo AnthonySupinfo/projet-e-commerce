@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Skip links pour la navigation au clavier -->
+    <!-- Barre de navigation -->
     <div class="nav-claviers">
         <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
         <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
     </div>
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navigation" role="navigation" aria-label="Navigation principale">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navigation"  aria-label="Navigation principale">
         <div class="container">
         <div class="navbar-brand align-items-center">
           <i class="bi bi-tools" aria-hidden="true"></i>
@@ -26,24 +26,24 @@
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" role="menubar">
-                    <li class="nav-item" role="none">
-                        <a class="nav-link" href="../index.html" role="menuitem">Accueil</a>
+                <ul class="navbar-nav ms-auto" >
+                    <li class="nav-item" >
+                        <a class="nav-link" href="../index.html" >Accueil</a>
                     </li>
-                    <li class="nav-item dropdown" role="none">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menuitem" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
                             Nos Outils
                         </a>
                          <ul
                             class="dropdown-menu"
                             aria-labelledby="navbarDropdown"
-                            role="menu"
+                            
                         >
-                            <li role="none">
+                            <li >
                             <a
                                 class="dropdown-item"
                                 href="../categories/perceuses.html"
-                                role="menuitem"
+                                
                             >
                                 <img
                                 src="../images/categories/perceuse-a-main.png"
@@ -55,11 +55,11 @@
                                 Perceuses
                             </a>
                             </li>
-                            <li role="none">
+                            <li >
                             <a
                                 class="dropdown-item"
                                 href="../categories/scies.html"
-                                role="menuitem"
+                                
                             >
                                 <img
                                 src="../images/categories/scie-circulaire.png"
@@ -71,11 +71,11 @@
                                 Scies
                             </a>
                             </li>
-                            <li role="none">
+                            <li >
                             <a
                                 class="dropdown-item"
                                 href="../categories/ponceuses.html"
-                                role="menuitem"
+                                
                             >
                                 <img
                                 src="../images/categories/ponceuse.png"
@@ -87,11 +87,11 @@
                                 Ponceuses
                             </a>
                             </li>
-                            <li role="none">
+                            <li >
                             <a
                                 class="dropdown-item"
                                 href="../categories/meuleuses.html"
-                                role="menuitem"
+                                
                             >
                                 <img
                                 src="../images/categories/meuleuse-dangle.png"
@@ -105,8 +105,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item" role="none">
-                        <a class="nav-link" href="../support.html" role="menuitem">Contact</a>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="../support.html" >Contact</a>
                     </li>
                 </ul>
             </div>
@@ -114,24 +114,24 @@
     </nav>
 
     <!-- Contenu principal -->
-    <main id="main-content" class="container mt-4" role="main">
+    <main id="main-content" class="container mt-4" >
 
         <!-- Produit -->
         <article class="row">
             <!-- Carousel d'images du produit -->
             <div class="col-lg-6">
-                <div id="productImageCarousel" class="carousel slide" data-bs-ride="false" role="img" aria-label="Galerie d'images du produit">
+                <div id="productImageCarousel" class="carousel slide" data-bs-ride="false"  aria-label="Galerie d'images du produit">
                     <!-- Indicateurs -->
-                    <div class="carousel-indicators" role="tablist">
-                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Afficher l'image 1 : Vue principale de la perceuse" role="tab" aria-selected="true"></button>
-                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="1" aria-label="Afficher l'image 2 : Détails techniques" role="tab" aria-selected="false"></button>
-                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="2" aria-label="Afficher l'image 3 : Kit complet" role="tab" aria-selected="false"></button>
+                    <div class="carousel-indicators" >
+                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Afficher l'image 1 : Vue principale de la perceuse"  aria-selected="true"></button>
+                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="1" aria-label="Afficher l'image 2 : Détails techniques"  aria-selected="false"></button>
+                        <button type="button" data-bs-target="#productImageCarousel" data-bs-slide-to="2" aria-label="Afficher l'image 3 : Kit complet"  aria-selected="false"></button>
                     </div>
 
                     <!-- Images du carousel -->
-                    <div class="carousel-inner" role="tabpanel">
+                    <div class="carousel-inner" >
                         <!-- Image 1 - Vue principale -->
-                        <div class="carousel-item active" role="tabpanel" aria-labelledby="image1-tab">
+                        <div class="carousel-item active"  aria-labelledby="image1-tab">
                             <div class="product-image">
                                 <img src="../images/produits/perceuse-12v.jpg" class="img-fluid product-main-image">
                                 
@@ -139,7 +139,7 @@
                         </div>
 
                         <!-- Image 2 - Vue technique -->
-                        <div class="carousel-item" role="tabpanel" aria-labelledby="image2-tab">
+                        <div class="carousel-item"  aria-labelledby="image2-tab">
                             <div class="product-image">
                                 <img src="../images/produits/perceuse12v1.jpg" class="img-fluid product-main-image">
                                 
@@ -147,7 +147,7 @@
                         </div>
 
                         <!-- Image 3 - Kit complet -->
-                        <div class="carousel-item" role="tabpanel" aria-labelledby="image3-tab">
+                        <div class="carousel-item"  aria-labelledby="image3-tab">
                             <div class="product-image">
                                 <img src="../images/produits/perceuse12v2.jpg" class="img-fluid product-main-image">
                                 
@@ -167,21 +167,21 @@
                 </div>
                 
                 <!-- Miniatures cliquables -->
-                <div class="row mt-3" role="tablist" aria-label="Miniatures des images du produit">
+                <div class="row mt-3"  aria-label="Miniatures des images du produit">
                     <div class="col-4">
-                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="0" role="tab" aria-selected="true" aria-label="Afficher la vue principale de la perceuse">
+                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="0"  aria-selected="true" aria-label="Afficher la vue principale de la perceuse">
                             <img src="../images/produits/perceuse-12v.jpg"  class="img-fluid thumbnail-image">
                             
                         </button>
                     </div>
                     <div class="col-4">
-                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="1" role="tab" aria-selected="false" aria-label="Afficher les détails techniques">
+                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="1"  aria-selected="false" aria-label="Afficher les détails techniques">
                             <img src="../images/produits/perceuse12v1.jpg" class="img-fluid thumbnail-image">
                             
                         </button>
                     </div>
                     <div class="col-4">
-                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="2" role="tab" aria-selected="false" aria-label="Afficher le kit complet">
+                        <button class="thumbnail-item border p-2 text-center cursor-pointer w-100" data-bs-target="#productImageCarousel" data-bs-slide-to="2"  aria-selected="false" aria-label="Afficher le kit complet">
                             <img src="../images/produits/perceuse12v2.jpg" class="img-fluid thumbnail-image">
                         
                         </button>
@@ -196,7 +196,7 @@
                     <div class="product-price" aria-label="Prix : 149 euros">149€</div>
                 </header>
                 
-                <div class="alert alert-success mt-3" role="status" aria-live="polite">
+                <div class="alert alert-success mt-3"  aria-live="polite">
                     <i class="bi bi-check-circle" aria-hidden="true"></i> En stock - Livraison sous 24-48h
                 </div>
 
@@ -284,8 +284,8 @@
         <!-- Produits similaires -->
         <section class="mt-5" aria-labelledby="related-products-title">
             <h2 id="related-products-title">Vous pourriez aussi aimer</h2>
-            <div class="row" role="list">
-                <div class="col-md-4" role="listitem">
+            <div class="row" >
+                <div class="col-md-4" >
                     <article class="card h-100">
                         <div class="card-body text-center">
                             <i class="bi bi-screwdriver" style="font-size: 3rem; color: #666;" aria-hidden="true"></i>
@@ -298,18 +298,19 @@
             </div>
         </section>
     </article>
+    </main>
 
     <!-- Pied de page -->
-    <footer class="bg-dark text-white py-4" role="contentinfo">
+    <footer class="bg-dark text-white py-4" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h5>ElectroPro</h5>
-                    <p>Votre boutique d'outillage électrique</p>
+                    <p>Votre boutique d'outillage électrique en ligne depuis 2020</p>
                 </div>
                 <div class="col-md-3">
                     <h6>Nos produits</h6>
-                    <ul class="list-unstyled" role="list">
+                    <ul class="list-unstyled" >
                         
                         <li><a href="../categories/perceuses.html" class="text-white">Perceuses</a></li>
                         <li><a href="../categories/scies.html" class="text-white">Scies</a></li>
@@ -326,37 +327,16 @@
                 </div>
             </div>
         </div>
+   <hr/>
+        <!-- Tous droits réservés -->
+        <div class="text-center">
+          <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
+        </div>
     </footer>
-
-    <!-- Bouton retour en haut -->
-    <button class="scroll-to-top" id="scrollToTop" title="Retour en haut" aria-label="Retour en haut de la page">
-        <i class="bi bi-arrow-up" aria-hidden="true"></i>
-    </button>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script pour le bouton retour en haut -->
     <script>
-        // Bouton retour en haut
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-
-        // Afficher/masquer le bouton selon la position de scroll
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.add('show');
-            } else {
-                scrollToTopBtn.classList.remove('show');
-            }
-        });
-
-        // Retour en haut au clic
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
         // Script pour le carousel d'images produit
         document.addEventListener('DOMContentLoaded', function() {
             const carousel = document.getElementById('productImageCarousel');
@@ -381,18 +361,6 @@
                     // Aller à la slide correspondante
                     carouselInstance.to(index);
                 });
-
-                // Style de survol pour les miniatures
-                thumbnail.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.05)';
-                    this.style.transition = 'transform 0.3s ease';
-                    this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                });
-                
-                thumbnail.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
-                    this.style.boxShadow = 'none';
-                });
             });
 
             // Mise à jour des miniatures lors du changement de slide
@@ -404,18 +372,6 @@
                     } else {
                         thumbnail.classList.remove('active');
                     }
-                });
-            });
-
-            // Animation des contrôles de navigation
-            const carouselControls = document.querySelectorAll('.carousel-control-prev, .carousel-control-next');
-            carouselControls.forEach(control => {
-                control.addEventListener('click', function() {
-                    // Effet visuel sur les contrôles
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1)';
-                    }, 150);
                 });
             });
 

@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
+    <!-- Barre de navigation -->
+    <div class="nav-claviers">
+      <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
+      <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
+    </div>
+    
     <!-- Menu -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary"
       id="main-navigation"
-      role="navigation"
+      
       aria-label="Navigation principale"
     >
       <div class="container">
@@ -41,22 +47,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" role="menubar">
-            <li class="nav-item" role="none">
+          <ul class="navbar-nav ms-auto" >
+            <li class="nav-item" >
               <a
                 class="nav-link"
                 href="../index.html"
-                role="menuitem"
+                
                 aria-current="page"
                 >Accueil</a
               >
             </li>
-            <li class="nav-item dropdown" role="none">
+            <li class="nav-item dropdown" >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
-                role="menuitem"
+                
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 aria-haspopup="true"
@@ -66,13 +72,13 @@
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdown"
-                role="menu"
+                
               >
-                <li role="none">
+                <li >
                   <a
                     class="dropdown-item"
                     href="perceuses.html"
-                    role="menuitem"
+                    
                   >
                     <img
                       src="../images/categories/perceuse-a-main.png"
@@ -84,8 +90,8 @@
                     Perceuses
                   </a>
                 </li>
-                <li role="none">
-                  <a class="dropdown-item" href="scies.html" role="menuitem">
+                <li >
+                  <a class="dropdown-item" href="scies.html" >
                     <img
                       src="../images/categories/scie-circulaire.png"
                       alt="Icône scie"
@@ -96,11 +102,11 @@
                     Scies
                   </a>
                 </li>
-                <li role="none">
+                <li >
                   <a
                     class="dropdown-item"
                     href="ponceuses.html"
-                    role="menuitem"
+                    
                   >
                     <img
                       src="../images/categories/ponceuse.png"
@@ -112,11 +118,11 @@
                     Ponceuses
                   </a>
                 </li>
-                <li role="none">
+                <li >
                   <a
                     class="dropdown-item"
                     href="meuleuses.html"
-                    role="menuitem"
+                    
                   >
                     <img
                       src="../images/categories/meuleuse-dangle.png"
@@ -130,8 +136,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item" role="none">
-              <a class="nav-link" href="../support.html" role="menuitem"
+            <li class="nav-item" >
+              <a class="nav-link" href="../support.html" 
                 >Contact</a
               >
             </li>
@@ -212,12 +218,12 @@
         <div class="row">
           <div class="col-md-6">
             <h5>ElectroPro</h5>
-            <p>Votre boutique d'outillage électrique</p>
+            <p>Votre boutique d'outillage électrique en ligne depuis 2020</p>
           </div>
 
          <div class="col-md-3">
                     <h6>Nos produits</h6>
-                    <ul class="list-unstyled" role="list">
+                    <ul class="list-unstyled" >
                         
                         <li><a href="../categories/perceuses.html" class="text-white">Perceuses</a></li>
                         <li><a href="../categories/scies.html" class="text-white">Scies</a></li>
@@ -233,36 +239,14 @@
           </div>
         </div>
       </div>
+      <hr/>
+      <!-- Tous droits réservés -->
+      <div class="text-center">
+          <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
+      </div>
+      </div>
     </footer>
-
-    <!-- Bouton retour en haut -->
-    <button class="scroll-to-top" id="scrollToTop" title="Retour en haut">
-      <i class="bi bi-arrow-up"></i>
-    </button>
-
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Script pour le bouton retour en haut -->
-    <script>
-      // Bouton retour en haut
-      const scrollToTopBtn = document.getElementById("scrollToTop");
-
-      // Afficher/masquer le bouton selon la position de scroll
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 300) {
-          scrollToTopBtn.classList.add("show");
-        } else {
-          scrollToTopBtn.classList.remove("show");
-        }
-      });
-
-      // Retour en haut au clic
-      scrollToTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
   </body>
 </html>
