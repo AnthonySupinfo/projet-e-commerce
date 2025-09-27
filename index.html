@@ -21,14 +21,13 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- Menu de navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary"
-         id="main-navigation"
-         aria-label="Navigation principale">
+         id="main-navigation">
       <div class="container">
         <div class="navbar-brand align-items-center">
-          <i class="bi bi-tools" aria-hidden="true"></i>
+          <i class="bi bi-tools"></i>
           <span class="mt-2">ElectroPro</span>
         </div>
          <!-- Dérouler-->
@@ -36,10 +35,8 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -48,7 +45,7 @@
               <a
                 class="nav-link"
                 href="index.html"
-                aria-current="page">Accueil</a>
+                >Accueil</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -56,11 +53,8 @@
                 href="#"
                 id="navbarDropdown"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-haspopup="true">Nos Outils</a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown">
+                >Nos Outils</a>
+              <ul class="dropdown-menu">
                 <li>
                   <a 
                     class="dropdown-item"
@@ -70,7 +64,7 @@
                       alt="Icône perceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"/>Perceuses</a>
+                      />Perceuses</a>
                 </li>
                 <li>
                   <a
@@ -81,7 +75,7 @@
                       alt="Icône scie"
                       width="16"
                       height="16"
-                      aria-hidden="true"/>Scies</a>
+                      />Scies</a>
                 </li>
                 <li>
                   <a
@@ -92,7 +86,7 @@
                       alt="Icône ponceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"/>Ponceuses</a>
+                      />Ponceuses</a>
                 </li>
                 <li>
                   <a
@@ -103,7 +97,7 @@
                       alt="Icône meuleuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"/>Meuleuses</a>
+                      />Meuleuses</a>
                 </li>
               </ul>
             </li>
@@ -118,8 +112,8 @@
     <!-- Contenu principal -->
     <main id="main-content">
       <!-- Section de bienvenue -->
-      <section class="container mt-4" aria-labelledby="welcome-title">
-        <div class="jumbotron bg-light p-5 rounded">
+      <section class="container mt-4">
+        <div class="accueil bg-light p-5 rounded">
           <h1 id="welcome-title" class="display-4">
             Bienvenue sur ElectroPro !
           </h1>
@@ -132,15 +126,14 @@
               Perceuses, scies, ponceuses et meuleuses disponibles.</strong>
           </p>
           <a
-            class="btn btn-primary btn-lg"
-            href="#produits"
-            aria-describedby="welcome-description"
+            class="btn-bleu btn-lg"
+            href="#produits"          
             >Voir nos produits</a>
         </div>
       </section>
 
       <!-- Nos catégories -->
-      <section class="container mt-5" aria-labelledby="categories-title">
+      <section class="container mt-5">
         <h2 id="categories-title" class="text-center mb-4">Nos Catégories</h2>
         <div class="row">
           <div class="col-md-3 mb-4">
@@ -155,8 +148,8 @@
                 <p class="card-text">Perceuses 18V & 12V</p>
                 <a
                   href="categories/perceuses.html"
-                  class="btn btn-primary"
-                  aria-label="Voir la catégorie Perceuses">Voir</a>
+                  class="btn-bleu"
+                  >Voir</a>
               </div>
             </article>
           </div>
@@ -173,8 +166,8 @@
                 <p class="card-text">Scies circulaires</p>
                 <a
                   href="categories/scies.html"
-                  class="btn btn-primary"
-                  aria-label="Voir la catégorie Scies">Voir</a>
+                  class="btn-bleu"
+                  >Voir</a>
               </div>
             </article>
           </div>
@@ -191,8 +184,8 @@
                 <p class="card-text">Ponceuses 18V & 12V</p>
                 <a
                   href="categories/ponceuses.html"
-                  class="btn btn-primary"
-                  aria-label="Voir la catégorie Ponceuses">Voir</a>
+                  class="btn-bleu"
+                  >Voir</a>
               </div>
             </article>
           </div>
@@ -209,8 +202,8 @@
                 <p class="card-text">Meuleuses 125 & 230mm</p>
                 <a
                   href="categories/meuleuses.html"
-                  class="btn btn-primary"
-                  aria-label="Voir la catégorie Meuleuses">Voir</a>
+                  class="btn-bleu"
+                  >Voir</a>
               </div>
             </article>
           </div>
@@ -220,8 +213,7 @@
       <!-- Produits populaires -->
       <section
         class="container mt-5"
-        id="produits"
-        aria-labelledby="products-title">
+        id="produits">
         <h2 id="products-title" class="text-center mb-4">Nos Produits Populaires</h2>
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 mb-4">
@@ -229,15 +221,14 @@
               <div class="card-body text-center">
                 <i
                   class="bi bi-screwdriver"
-                  style="font-size: 4rem; color: #666"
-                  aria-hidden="true"></i>
+                  style="font-size: 4rem; color: #666"></i>
                 <h3 class="card-title h5">Perceuse à Percussion</h3>
                 <p class="card-text">Perceuse 18V</p>
-                <div class="text-danger h4">189€
+                <div class="prix h4">189€
                 </div>
                 <a
                   href="produits/perceuse-pro.html"
-                  class="btn btn-success">Acheter</a>
+                  class="btn-vers">Acheter</a>
               </div>
             </article>
           </div>
@@ -247,47 +238,40 @@
               <div class="card-body text-center">
                 <i
                   class="bi bi-gear"
-                  style="font-size: 4rem; color: #666"
-                  aria-hidden="true"></i>
+                  style="font-size: 4rem; color: #666"></i>
                 <h3 class="card-title h5">Ponceuse Excentrique</h3>
                 <p class="card-text">Ponceuse 12V</p>
-                <div class="text-danger h4">174€
+                <div class="prix h4">174€
                 </div>
                 <a href="produits/ponceuse12v.html"
-                  class="btn btn-success">Acheter</a>
+                  class="btn-vers">Acheter</a>
               </div>
             </article>
           </div>
-      
-            
- 
         </div>
       </section>
 
       <!-- INFO -->
-      <section class="container mt-5 mb-5" aria-labelledby="why-choose-title">
+      <section class="container mt-5 mb-5">
         <div class="row">
           <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-truck"
-              style="font-size: 3rem; color: blue"
-              aria-hidden="true"></i>
+              style="font-size: 3rem; color: blue"></i>
             <h3 class="mt-3 h4">Livraison Rapide</h3>
             <p>Livraison en 24-48h partout en France</p>
           </div>
           <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-shield-check"
-              style="font-size: 3rem; color: green"
-              aria-hidden="true"></i>
+              style="font-size: 3rem; color: green"></i>
             <h3 class="mt-3 h4">Garantie</h3>
             <p>Tous nos outils sont garantis 2 ans minimum</p>
           </div>
           <div class="col-md-4 text-center mb-4">
             <i
               class="bi bi-telephone"
-              style="font-size: 3rem; color: red"
-              aria-hidden="true"></i>
+              style="font-size: 3rem; color: red"></i>
             <h3 class="mt-3 h4">Support</h3>
             <p>Une équipe à votre écoute du lundi au vendredi</p>
           </div>
@@ -330,6 +314,10 @@
           <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
         </div>
       </div>
+      <!-- Bouton retour en haut -->
+      <a href="#top" class="brh">
+        <i class="bi bi-arrow-up"></i>
+      </a>
     </footer>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

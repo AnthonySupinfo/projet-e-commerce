@@ -1,272 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scies - ElectroPro</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <!-- Barre de navigation -->
-    <div class="nav-claviers">
-      <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
-      <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scies - ElectroPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body id="top">
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navigation">
+    <div class="container">
+      <div class="navbar-brand" class="align-items-center">
+        <i class="bi bi-tools"></i>
+        <span class="mt-2">ElectroPro</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+              Nos Outils
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="perceuses.html">
+                  <img src="../images/categories/perceuse-a-main.png" alt="Icône perceuse" width="16" height="16" />
+                  Perceuses
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="scies.html">
+                  <img src="../images/categories/scie-circulaire.png" alt="Icône scie" width="16" height="16" />
+                  Scies
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ponceuses.html">
+                  <img src="../images/categories/ponceuse.png" alt="Icône ponceuse" width="16" height="16" />
+                  Ponceuses
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="meuleuses.html">
+                  <img src="../images/categories/meuleuse-dangle.png" alt="Icône meuleuse" width="16" height="16" />
+                  Meuleuses
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../support.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-    <!-- Menu -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary"
-      id="main-navigation"
-      
-      aria-label="Navigation principale"
-    >
-      <div class="container">
-        <div class="navbar-brand align-items-center">
-          <i class="bi bi-tools" aria-hidden="true"></i>
-          <span class="mt-2">ElectroPro</span>
+  </nav>
+
+  <!-- Contenu -->
+  <div class="container mt-4">
+
+    <!-- Titre -->
+    <div class="text-center mb-4">
+      <h1><i class="bi bi-tools"></i> Nos Scies</h1>
+      <p>
+        Découvrez notre sélection de scies électriques pour tous vos travaux
+        de découpe
+      </p>
+    </div>
+
+    <!-- Liste des produits -->
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-lightning" style="font-size: 4rem; color: #666"></i>
+            <h5 class="card-title">Scie circulaire de table</h5>
+            <p class="card-text">
+              GTS 254 Bosch Professional 230V <br />1800Watts
+            </p>
+            <p><strong>Caractéristiques :</strong></p>
+            <ul class="list-unstyled text-start">
+              <li>• 1500W puissant</li>
+              <li>• Lame 265 Millimètres</li>
+              <li>• Guide laser</li>
+              <li>• Profondeur réglable</li>
+            </ul>
+            <h4 class="prix">282€</h4>
+            <span class="btn-vers" class="stock-status stock-in">En stock</span><br /><br />
+            <a href="../produits/scie.table.html" class="btn-bleu">Voir le produit</a>
+          </div>
         </div>
+      </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Basculer la navigation"
-        >
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
-        </button>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-lightning" style="font-size: 4rem; color: #666"></i>
+            <h5 class="card-title">Scie Circulaire 12V</h5>
+            <p class="card-text">
+              GKS 12V-26 Bosch Professional 12V System scie circulaire
+              sans-fil
+            </p>
+            <p><strong>Caractéristiques :</strong></p>
+            <ul class="list-unstyled text-start">
+              <li>• 12W puissant</li>
+              <li>• Guide intégrée</li>
+              <li>• Lame 15 Millimètres</li>
+              <li>• Matière Métal</li>
+            </ul>
+            <h4 class="prix">246€</h4>
+            <span class="btn-vers" class="stock-status stock-in">En stock</span><br /><br />
+            <a href="../produits/scie.circulaire.html" class="btn-bleu">Voir le produit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" >
-            <li class="nav-item" >
-              <a
-                class="nav-link"
-                href="../index.html"
-                
-                aria-current="page"
-                >Accueil</a
-              >
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>ElectroPro</h5>
+          <p>Votre boutique d'outillage électrique en ligne depuis 2020</p>
+        </div>
+        <div class="col-md-3">
+          <h6>Nos produits</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="../categories/perceuses.html" class="text-white">Perceuses</a>
             </li>
-            <li class="nav-item dropdown" >
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
-                Nos Outils
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                
-              >
-                <li >
-                  <a
-                    class="dropdown-item"
-                    href="perceuses.html"
-                    
-                  >
-                    <img
-                      src="../images/categories/perceuse-a-main.png"
-                      alt="Icône perceuse"
-                      width="16"
-                      height="16"
-                      aria-hidden="true"
-                    />
-                    Perceuses
-                  </a>
-                </li>
-                <li >
-                  <a class="dropdown-item" href="scies.html" >
-                    <img
-                      src="../images/categories/scie-circulaire.png"
-                      alt="Icône scie"
-                      width="16"
-                      height="16"
-                      aria-hidden="true"
-                    />
-                    Scies
-                  </a>
-                </li>
-                <li >
-                  <a
-                    class="dropdown-item"
-                    href="ponceuses.html"
-                    
-                  >
-                    <img
-                      src="../images/categories/ponceuse.png"
-                      alt="Icône ponceuse"
-                      width="16"
-                      height="16"
-                      aria-hidden="true"
-                    />
-                    Ponceuses
-                  </a>
-                </li>
-                <li >
-                  <a
-                    class="dropdown-item"
-                    href="meuleuses.html"
-                    
-                  >
-                    <img
-                      src="../images/categories/meuleuse-dangle.png"
-                      alt="Icône meuleuse"
-                      width="16"
-                      height="16"
-                      aria-hidden="true"
-                    />
-                    Meuleuses
-                  </a>
-                </li>
-              </ul>
+            <li>
+              <a href="../categories/scies.html" class="text-white">Scies</a>
             </li>
-            <li class="nav-item" >
-              <a class="nav-link" href="../support.html" 
-                >Contact</a
-              >
+            <li>
+              <a href="../categories/scies.html" class="text-white">Ponceuses</a>
+            </li>
+            <li>
+              <a href="../categories/scies.html" class="text-white">Meuleuses</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- Contenu -->
-    <div class="container mt-4">
-
-      <!-- Titre -->
-      <div class="text-center mb-4">
-        <h1><i class="bi bi-tools"></i> Nos Scies</h1>
-        <p>
-          Découvrez notre sélection de scies électriques pour tous vos travaux
-          de découpe
-        </p>
-      </div>
-
-      <!-- Liste des produits -->
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <i
-                class="bi bi-lightning"
-                style="font-size: 4rem; color: #666"
-              ></i>
-              <h5 class="card-title">Scie circulaire de table</h5>
-              <p class="card-text">
-                GTS 254 Bosch Professional 230V <br />1800Watts
-              </p>
-              <p><strong>Caractéristiques :</strong></p>
-              <ul class="list-unstyled text-start">
-                <li>• 1500W puissant</li>
-                <li>• Lame 265 Millimètres</li>
-                <li>• Guide laser</li>
-                <li>• Profondeur réglable</li>
-              </ul>
-              <h4 class="text-danger">282€</h4>
-              <span class="stock-status stock-in">En stock</span><br /><br />
-              <a href="../produits/scie.table.html" class="btn btn-primary"
-                >Voir le produit</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <i
-                class="bi bi-lightning"
-                style="font-size: 4rem; color: #666"
-              ></i>
-              <h5 class="card-title">Scie Circulaire 12V</h5>
-              <p class="card-text">
-                GKS 12V-26 Bosch Professional 12V System scie circulaire
-                sans-fil
-              </p>
-              <p><strong>Caractéristiques :</strong></p>
-              <ul class="list-unstyled text-start">
-                <li>• 12W puissant</li>
-                <li>• Guide intégrée</li>
-                <li>• Lame 15 Millimètres</li>
-                <li>• Matière Métal</li>
-              </ul>
-              <h4 class="text-danger">246€</h4>
-              <span class="stock-status stock-in">En stock</span><br /><br />
-              <a href="../produits/scie.circulaire.html" class="btn btn-primary"
-                >Voir le produit</a
-              >
-            </div>
-          </div>
+        <div class="col-md-3">
+          <h6>Contact</h6>
+          <p>Email: contact@electropro.fr<br />Tel: 01 23 45 67 89</p>
         </div>
       </div>
     </div>
-
-    <!-- Pied de page -->
-    <footer class="bg-dark text-white py-4 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h5>ElectroPro</h5>
-            <p>Votre boutique d'outillage électrique en ligne depuis 2020</p>
-          </div>
-          <div class="col-md-3">
-            <h6>Nos produits</h6>
-            <ul class="list-unstyled" >
-              <li>
-                <a href="../categories/perceuses.html" class="text-white"
-                  >Perceuses</a
-                >
-              </li>
-              <li>
-                <a href="../categories/scies.html" class="text-white">Scies</a>
-              </li>
-              <li>
-                <a href="../categories/scies.html" class="text-white"
-                  >Ponceuses</a
-                >
-              </li>
-              <li>
-                <a href="../categories/scies.html" class="text-white"
-                  >Meuleuses</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Contact</h6>
-            <p>Email: contact@electropro.fr<br />Tel: 01 23 45 67 89</p>
-          </div>
-        </div>
-      </div>
-      <hr/>
-      <!-- Tous droits réservés -->
-      <div class="text-center">
-          <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
-      </div>
-      </div>
-    </footer>
-
+    <hr />
+    <!-- Tous droits réservés -->
+    <div class="text-center">
+      <p>&copy; 2024 ElectroPro - Tous droits réservés</p>
+    </div>
+    </div>
     <!-- Bouton retour en haut -->
-    <button class="scroll-to-top" id="scrollToTop" title="Retour en haut">
+    <a href="#top" class="brh">
       <i class="bi bi-arrow-up"></i>
-    </button>
+    </a>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

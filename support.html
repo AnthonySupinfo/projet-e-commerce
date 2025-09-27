@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contactez ElectroPro pour toute question sur nos outils électriques. Support client disponible du lundi au vendredi. Formulaire de contact accessible."
+      content="Contactez ElectroPro pour toute question sur nos outils électriques. Support client disponible du lundi au vendredi. form-control de contact accessible."
     />
     <title>Contact - ElectroPro</title>
     <link
@@ -18,32 +18,22 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <!-- Barre de navigation -->
-    <div class="nav-claviers">
-      <a href="#main-content" class="nav-clavier">Aller au contenu principal</a>
-      <a href="#main-navigation" class="nav-clavier">Aller à la navigation</a>
-    </div>
+  <body id="top">
+   
     <!-- Menu -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary"
-      id="main-navigation"
-      aria-label="Navigation principale"
-    >
+      id="main-navigation">
       <div class="container">
-        <div class="navbar-brand" aria-label="ElectroPro - Retour à l'accueil">
-          <i class="bi bi-tools" aria-hidden="true"></i> ElectroPro
+        <div class="navbar-brand">
+          <i class="bi bi-tools" ></i> ElectroPro
         </div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Basculer la navigation"
-        >
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -55,13 +45,10 @@
                 class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-haspopup="true"
-              >
+                data-bs-toggle="dropdown">
                 Nos Outils
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="/categories/perceuses.html">
                     <img
@@ -69,7 +56,7 @@
                       alt="Icône perceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
+                      
                     />
                     Perceuses
                   </a>
@@ -81,7 +68,7 @@
                       alt="Icône scie"
                       width="16"
                       height="16"
-                      aria-hidden="true"
+                      
                     />
                     Scies
                   </a>
@@ -93,7 +80,7 @@
                       alt="Icône ponceuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
+                      
                     />
                     Ponceuses
                   </a>
@@ -105,7 +92,7 @@
                       alt="Icône meuleuse"
                       width="16"
                       height="16"
-                      aria-hidden="true"
+                      
                     />
                     Meuleuses
                   </a>
@@ -113,9 +100,8 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="support.html" aria-current="page"
-                >Contact</a
-              >
+              <a class="nav-link" href="support.html"
+                >Contact</a>
             </li>
           </ul>
         </div>
@@ -127,21 +113,18 @@
       <!-- Titre -->
       <header class="text-center mb-4">
         <h1>
-          <i class="bi bi-envelope" aria-hidden="true"></i> Nous Contacter
+          <i class="bi bi-envelope" ></i> Nous Contacter
         </h1>
       </header>
 
       <!-- Informations de contact -->
-      <section class="row mb-5" aria-labelledby="contact-info-title">
-        <h2 id="contact-info-title" class="visually-hidden">
-          Informations de contact
-        </h2>
+      <section class="row mb-5">     
         <div class="col-md-4">
-          <article class="support-card">
+          <article class="capsule-contact">
             <i
               class="bi bi-telephone"
               style="font-size: 3rem; color: blue"
-              aria-hidden="true"
+              
             ></i>
             <h3 class="h4">Téléphone</h3>
             <p>
@@ -151,11 +134,11 @@
         </div>
 
         <div class="col-md-4">
-          <article class="support-card">
+          <article class="capsule-contact">
             <i
               class="bi bi-envelope"
               style="font-size: 3rem; color: green"
-              aria-hidden="true"
+              
             ></i>
             <h3 class="h4">Email</h3>
             <p>
@@ -169,12 +152,13 @@
         </div>
 
         <div class="col-md-4">
-          <article class="support-card">
+          <article class="capsule-contact">
             <i
               class="bi bi-geo-alt"
               style="font-size: 3rem; color: red"
-              aria-hidden="true"
+              
             ></i>
+
             <h3 class="h4">Adresse</h3>
             <address>
               <p>
@@ -185,12 +169,10 @@
         </div>
       </section>
 
-      <!-- Formulaire de contact -->
+      <!-- form-control de contact -->
       <section
         id="mecontacter"
-        class="row"
-        aria-labelledby="contact-form-title"
-      >
+        class="row">
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"
@@ -200,7 +182,7 @@
           <input
             type="hidden"
             name="redirect"
-            value="http://127.0.0.1:3000/remerciement.html"
+            value="http://127.0.0.1:3000/redirection.html"
           />
 
           <div class="col-lg-8 mx-auto">
@@ -209,11 +191,8 @@
                 Formulaire de Contact
               </h2>
 
-              <form aria-labelledby="contact-form-title">
+              <form>
                 <fieldset class="row">
-                  <legend class="visually-hidden">
-                    Informations personnelles
-                  </legend>
                   <div class="col-md-6 mb-3">
                     <label for="nom" class="form-label">Votre nom *</label>
                     <input
@@ -222,7 +201,6 @@
                       id="nom"
                       name="nom"
                       required
-                      aria-describedby="nom-help"
                     />
                   </div>
 
@@ -234,7 +212,6 @@
                       id="prenom"
                       name="prenom"
                       required
-                      aria-describedby="prenom-help"
                     />
                   </div>
 
@@ -246,7 +223,6 @@
                       id="email"
                       name="email"
                       required
-                      aria-describedby="email-help"
                     />
                   </div>
 
@@ -257,7 +233,6 @@
                       class="form-control"
                       id="telephone"
                       name="telephone"
-                      aria-describedby="tel-help"
                     />
                   </div>
                 </fieldset>
@@ -271,17 +246,11 @@
                     id="message"
                     name="message"
                     rows="5"
-                    required
-                    placeholder="Décrivez votre demande..."
-                  >
+                    required>
                   </textarea>
                 </div>
 
                 <fieldset class="mb-3">
-                  <legend class="visually-hidden">
-                    Options et consentements
-                  </legend>
-
                   <div class="form-check">
                     <input
                       type="checkbox"
@@ -290,6 +259,7 @@
                       class="form-check-input"
                       required
                     />
+
                     <label for="conditions" class="form-check-label">
                       J'accepte que mes données soient utilisées pour répondre à
                       ma demande *
@@ -300,10 +270,8 @@
                 <div class="text-center">
                   <button
                     type="submit"
-                    class="btn btn-success btn-lg"
-                    aria-describedby="submit-help"
-                  >
-                    <i class="bi bi-send" aria-hidden="true"></i> Envoyer le
+                    class="btn-vers btn-lg">
+                    <i class="bi bi-send"></i> Envoyer le
                     message
                   </button>
                 </div>
@@ -314,14 +282,11 @@
       </section>
 
       <!-- Nos Horaires -->
-      <section class="row mt-5" aria-labelledby="help-title">
-        <h2 id="help-title" class="visually-hidden">
-          Aide et informations pratiques
-        </h2>
-        <div class="delivery-support">
+      <section class="row mt-5">
+        <div class="nos-horaires">
           <div class="col-md-4">
-            <h3><i class="bi bi-clock" aria-hidden="true"></i> Nos Horaires</h3>
-            <table class="table" aria-label="Horaires d'ouverture">
+            <h3><i class="bi bi-clock" ></i> Nos Horaires</h3>
+            <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Jour</th>
@@ -384,17 +349,6 @@
         <i class="bi bi-arrow-up"></i>
       </a>
     </footer>
-
-    <!-- Bouton retour en haut -->
-    <button
-      class="scroll-to-top"
-      id="scrollToTop"
-      title="Retour en haut"
-      aria-label="Retour en haut de la page"
-    >
-      <i class="bi bi-arrow-up" aria-hidden="true"></i>
-    </button>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
